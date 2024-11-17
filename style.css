@@ -14,6 +14,10 @@ input {
     display: block;
 }
 
+input:invalid {
+    outline: 2px solid red;
+}
+
 #div1 {
     display: flex;
     flex-wrap: wrap;

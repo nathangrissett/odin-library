@@ -98,6 +98,13 @@ function newContent() {
 }
 
 submit.addEventListener('click', function() {
+    if ((!document.querySelector('#title').checkValidity()) ||
+    (!document.querySelector('#author').checkValidity()) ||
+    (!document.querySelector('#pages').checkValidity()) ||
+    (!document.querySelector('#read').checkValidity()))
+    {
+        return;
+    }
     newContent();
 });
 
